@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>x64</Platforms>
+        <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Spectro.Core\Spectro.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="libsoundio-sharp\example\**" />
+      <Compile Remove="libsoundio-sharp\libsoundio-sharp.Tests\**" />
+      <Compile Remove="libsoundio-sharp\libsoundio-sharp\libs\**" />
+      <Compile Remove="builds\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="libsoundio-sharp\example\**" />
+      <EmbeddedResource Remove="libsoundio-sharp\libsoundio-sharp.Tests\**" />
+      <EmbeddedResource Remove="libsoundio-sharp\libsoundio-sharp\libs\**" />
+      <EmbeddedResource Remove="builds\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="libsoundio-sharp\example\**" />
+      <None Remove="libsoundio-sharp\libsoundio-sharp.Tests\**" />
+      <None Remove="libsoundio-sharp\.gitignore" />
+      <None Remove="libsoundio-sharp\.gitmodules" />
+      <None Remove="libsoundio-sharp\LICENSE" />
+      <None Remove="libsoundio-sharp\Makefile" />
+      <None Remove="libsoundio-sharp\README.md" />
+      <None Remove="libsoundio-sharp\libsoundio-sharp\libs\**" />
+      <None Remove="builds\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="kenssamson.rpi-ws281x-csharp" Version="1.1.0" />
+    </ItemGroup>
+</Project>

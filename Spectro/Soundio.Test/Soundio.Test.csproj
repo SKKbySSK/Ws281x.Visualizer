@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Configurations>Release;Debug</Configurations>
+        <Platforms>x64</Platforms>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Spectro.Cross\Spectro.Cross.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="test.wav">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Remove="builds\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="builds\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="builds\**" />
+    </ItemGroup>
+
+</Project>

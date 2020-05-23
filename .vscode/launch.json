@@ -1,0 +1,54 @@
+{
+    // Use IntelliSense to find out which attributes exist for C# debugging
+    // Use hover for the description of the existing attributes
+    // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Raspberry Pi Devices",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "sync",
+            "cwd": "~/Projects/Ws281x.Visualizer/",
+            "program": "./Ws281x.Visualizer",
+            "args": [
+                "devices"
+            ],
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "pipeTransport": {
+                "pipeProgram": "/usr/bin/ssh",
+                "pipeArgs": [
+                    "pi@raspberrypi.local"
+                ],
+                "debuggerPath": "~/vsdbg/vsdbg"
+            }
+        },
+        {
+            "name": "Raspberry Pi Passthrough",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "sync",
+            "cwd": "~/Projects/Ws281x.Visualizer/",
+            "program": "./Ws281x.Visualizer",
+            "args": [
+                "passthrough",
+                "-i",
+                "14",
+                "-o",
+                "11"
+            ],
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "pipeTransport": {
+                "pipeProgram": "ssh",
+                "pipeArgs": [
+                    "pi@raspberrypi.local"
+                ],
+                "debuggerPath": "~/vsdbg/vsdbg"
+            }
+        },
+    ]
+}

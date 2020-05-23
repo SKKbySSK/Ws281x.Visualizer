@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "--self-contained",
+                "true",
+                "-r",
+                "linux-arm",
+                "${workspaceFolder}/Ws281x.Visualizer/Ws281x.Visualizer.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary",
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "sync",
+            "command": "rsync",
+            "type": "shell",
+            "args": [
+                "-av",
+                "${workspaceFolder}/Ws281x.Visualizer/bin/Debug/netcoreapp3.1/linux-arm/publish/",
+                "pi@raspberrypi.local:/home/pi/Projects/Ws281x.Visualizer/"
+            ],
+            "dependsOn": [
+                "publish"
+            ]
+        }
+    ]
+}

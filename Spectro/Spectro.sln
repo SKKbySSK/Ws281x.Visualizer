@@ -1,0 +1,42 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spectro.Core", "Spectro.Core\Spectro.Core.csproj", "{FB670BA7-9EBC-44F1-AB16-11BC05FBDE28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spectro.Core.Test", "Spectro.Core.Test\Spectro.Core.Test.csproj", "{7E2310A0-2308-45CF-9E1E-F73F0E646041}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spectro.Cross", "Spectro.Cross\Spectro.Cross.csproj", "{EC1D4C19-1050-4FEC-945A-1948BBA661B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP110E.Visualizer", "..\..\SP110E.Visualizer\SP110E.Visualizer\SP110E.Visualizer.csproj", "{A3149ADF-EC34-42DB-B950-24B98FB5DB8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soundio.Test", "Soundio.Test\Soundio.Test.csproj", "{47DAF0E9-2ABC-487B-9944-7B8363832AA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS281x.Visualizer", "..\..\WS281x.Visualizer\WS281x.Visualizer\WS281x.Visualizer.csproj", "{CA23136D-657F-4562-A08D-3121D5B6F578}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB670BA7-9EBC-44F1-AB16-11BC05FBDE28}.Debug|x64.ActiveCfg = Debug|x64
+		{FB670BA7-9EBC-44F1-AB16-11BC05FBDE28}.Debug|x64.Build.0 = Debug|x64
+		{FB670BA7-9EBC-44F1-AB16-11BC05FBDE28}.Release|x64.ActiveCfg = Release|x64
+		{FB670BA7-9EBC-44F1-AB16-11BC05FBDE28}.Release|x64.Build.0 = Release|x64
+		{7E2310A0-2308-45CF-9E1E-F73F0E646041}.Debug|x64.ActiveCfg = Debug|x64
+		{7E2310A0-2308-45CF-9E1E-F73F0E646041}.Debug|x64.Build.0 = Debug|x64
+		{7E2310A0-2308-45CF-9E1E-F73F0E646041}.Release|x64.ActiveCfg = Release|x64
+		{7E2310A0-2308-45CF-9E1E-F73F0E646041}.Release|x64.Build.0 = Release|x64
+		{EC1D4C19-1050-4FEC-945A-1948BBA661B0}.Debug|x64.ActiveCfg = Debug|x64
+		{EC1D4C19-1050-4FEC-945A-1948BBA661B0}.Debug|x64.Build.0 = Debug|x64
+		{EC1D4C19-1050-4FEC-945A-1948BBA661B0}.Release|x64.ActiveCfg = Release|x64
+		{EC1D4C19-1050-4FEC-945A-1948BBA661B0}.Release|x64.Build.0 = Release|x64
+		{47DAF0E9-2ABC-487B-9944-7B8363832AA1}.Debug|x64.ActiveCfg = Debug|x64
+		{47DAF0E9-2ABC-487B-9944-7B8363832AA1}.Debug|x64.Build.0 = Debug|x64
+		{A3149ADF-EC34-42DB-B950-24B98FB5DB8C}.Debug|x64.ActiveCfg = Debug|x64
+		{A3149ADF-EC34-42DB-B950-24B98FB5DB8C}.Debug|x64.Build.0 = Debug|x64
+		{CA23136D-657F-4562-A08D-3121D5B6F578}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CA23136D-657F-4562-A08D-3121D5B6F578}.Debug|x64.Build.0 = Debug|Any CPU
+		{CA23136D-657F-4562-A08D-3121D5B6F578}.Release|x64.ActiveCfg = Release|Any CPU
+		{CA23136D-657F-4562-A08D-3121D5B6F578}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

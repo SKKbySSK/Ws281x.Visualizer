@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Ws281x.Visualizer": {
+      "commandName": "Project",
+      "commandLineArgs": "led --strip WS2812_STRIP",
+      "remoteDebugEnabled": false,
+      "remoteDebugMachine": "raspberrypi.local",
+      "authenticationMode": "Windows"
+    }
+  }
+}

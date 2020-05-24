@@ -51,6 +51,10 @@ namespace Spectro.Core
         public void Stop(bool waitForExit = false)
         {
             _start = false;
+            if (waitForExit)
+            {
+                lock (_threadLock) { }
+            }
         }
 
         private void RunThread()

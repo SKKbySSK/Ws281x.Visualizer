@@ -1,0 +1,35 @@
+﻿{
+  "Name": "Simple",
+  "ColorRanges": [
+    {
+      "Frequency": {
+        "From": 50.0,
+        "To": 500.0
+      },
+      "Minimum": -85,
+      "Maximum": -50,
+      "LedOffset": 0,
+      "LedCount": 0.33
+    },
+    {
+      "Frequency": {
+        "From": 500.0,
+        "To": 1500.0
+      },
+      "Minimum": -85,
+      "Maximum": -50,
+      "LedOffset": 0.33,
+      "LedCount": 0.33
+    },
+    {
+      "Frequency": {
+        "From": 1500.0,
+        "To": 10000.0
+      },
+      "Minimum": -85,
+      "Maximum": -50,
+      "LedOffset": 0.66,
+      "LedCount": 0.33
+    }
+  ]
+}

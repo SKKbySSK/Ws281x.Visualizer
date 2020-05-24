@@ -134,7 +134,6 @@ namespace Spectro.Cross.Soundio
             // Open後にチャンネルは設定しないと動作しない模様
             if (Device.CurrentLayout.ChannelCount != format.Channels)
             {
-                Console.WriteLine("Querying matched format...");
                 checkFormatInternal(format, out var channelLayout);
                 if (!channelLayout.HasValue)
                 {

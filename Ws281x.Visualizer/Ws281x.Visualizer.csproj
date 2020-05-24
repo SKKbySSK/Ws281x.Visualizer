@@ -8,7 +8,26 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Remove="builds\**" />
+      <EmbeddedResource Remove="builds\**" />
+      <None Remove="builds\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="sync.sh" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="kenssamson.rpi-ws281x-csharp" Version="1.1.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
       <ProjectReference Include="..\Spectro\Spectro.Cross\Spectro.Cross.csproj" />
     </ItemGroup>
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+      <Exec Command="xcopy &quot;$(ProjectDir)Resources&quot; &quot;$(TargetDir)&quot; /Y /S /E" />
+    </Target>
 
 </Project>

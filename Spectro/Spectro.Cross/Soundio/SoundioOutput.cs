@@ -209,18 +209,6 @@ namespace Spectro.Cross.Soundio
             }
 
             outstream.EndWrite();
-
-            unsafe void write_sample16(IntPtr ptr, short sample)
-            {
-                short* buf = (short*)ptr;
-                *buf = sample;
-            }
-
-            unsafe void write_sample8(IntPtr ptr, byte sample)
-            {
-                byte* buf = (byte*)ptr;
-                *buf = sample;
-            }
         }
 
         public void Dispose()
